@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="panel-group">
+                <div class="panel panel-primary">
+                    <div class="panel-heading panel_header">
+                        <div class="panel_icon"><i class="fa fa-cutlery text-primary" aria-hidden="true"></i></div>
+                        <p class="panel_text">Де поїсти?</p>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="accordion-toggle"></a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body" style="padding: 0;">
+                            <ul id="left-1" class="list-group" style="margin: 0">
+                                <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                                <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="data:image/jpeg;base64,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">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Undegraund»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Underground» знаходиться у самому центрі прикарпатського міста Коломия.
+                                                Ми пропонуємо вам різноманітні пивні сети та закуски,смачні салати та страви на грилю,безподобні бельгійські вафлі
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Майдан Вічевий, 6</b></p>
+
+
+                                </li>
+                                <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="https://objor.com/uploads/posts/2018-2/6697-1-5a7867a05ba78.jpeg">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Піцерія «DANIEL»</p>
+                                            <p class="list_description text-muted">
+                                                Італійська кухня, піца на дровах. Святкування урочистостей до 25 осіб.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>вулиця Січових Стрільців,</b></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading panel_header">
+                        <div class="panel_icon"><i class="fa fa-bed text-info" aria-hidden="true"></i></div>
+                        <p class="panel_text">Де поспати?</p>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="accordion-toggle"></a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                        <div class="panel-body" style="padding: 0;">
+                            <ul id="left-2" class="list-group" style="margin: 0">
+                                <li data-parent="left-2" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                                <li data-parent="left-2" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                                <li data-parent="left-2" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-success">
+                    <div class="panel-heading panel_header">
+                        <div class="panel_icon"><i class="fa fa-futbol-o" aria-hidden="true"></i></div>
+                        <p class="panel_text">Де розважитись?</p>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThre" class="accordion-toggle"></a>
+                    </div>
+                    <div id="collapseThre" class="panel-collapse collapse in">
+                        <div class="panel-body" style="padding: 0;">
+                            <ul id="left-3" class="list-group" style="margin: 0">
+                                <li data-parent="left-3" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                                <li data-parent="left-3" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                                <li data-parent="left-3" class="list-group-item group-item" price="2">
+                                    <div class="list_items">
+                                        <div class="list_img">
+                                            <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg" class="img-responsive">
+                                            <span class="label label-info">Середній час -  2 год.</span>
+                                        </div>
+                                        <div class="list_body">
+                                            <p class="list_title text-center">Паб «Штольня»</p>
+                                            <p class="list_description text-muted">
+                                                Паб «Штольня» – один з небагатьох концептуальних пабів в Коломиї.
+                                                Назва закладу відтворює атмосферу першого залу – приміщення в підвалі старої австрійської забудови.
+                                            </p>
+                                        </div>
+                                        <a class="btn btn-sm btn-primary pull-right moveItem">
+                                            <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                                            <i class="fa fa-times-circle" style="display: none;" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <p class="adress"><i class="fa fa-map-marker text-danger" aria-hidden="true"></i>&nbsp;&nbsp;<b>Вулиця Театральна, 35</b></p>
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">Ваш вибір:</div>
+                <div class="panel-body" style="padding: 0;">
+                    <ul class="list-group" style="margin: 0;" id="selectedList"></ul>
+                </div>
+                <div class="panel-footer">Загальна тривалість маршруту <span id="summBox"></span> год. </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
