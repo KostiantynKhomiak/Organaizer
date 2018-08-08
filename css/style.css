@@ -1,0 +1,134 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/header.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.darker {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section-organaizer {
+    padding: 60px 0;
+}
+
+.panel-heading:hover {
+    cursor: pointer;
+}
+.panel_icon {
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    padding-top: 7px;
+}
+.panel_text {
+    font-size: 16px;
+    font-weight: 700;
+}
+.panel_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_items {
+    display: flex!important;
+    align-items: flex-start;
+}
+.list_title {
+    font-weight: 700;
+    font-size: 16px;
+}
+.list_img > img {
+    width: 100%;
+}
+.list_img {
+    width: 30%;
+}
+.list_body {
+    width: 70%;
+}
+.list_body {
+    padding: 0 7px;
+}
+.heading-primary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.heading-primary h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    backface-visibility: hidden;
+}
+.text-main {
+    display: block;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+    animation: moveInLeft 1s;
+    animation-timing-function: ease-out;
+    /*animation-delay: 1s;*/
+}
+.text-sub {
+display: block;
+font-family: "Roboto", sans-serif;
+text-align: center;
+line-height: 2;
+animation: moveInRight 1s;
+animation-timing-function: ease-out;
+}
+
+
+
+
+
+

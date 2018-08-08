@@ -1,4 +1,4 @@
-jQuery('.panel-heading').click(function() {
+jQuery('.panel_header').click(function() {
     jQuery(this).siblings('.panel-body').slideToggle();
     jQuery(this).children('.toggleIcons').children().siblings().toggle();
 });
