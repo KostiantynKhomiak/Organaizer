@@ -12,18 +12,6 @@
 </head>
 <body>
 
-<header>
-    <div class="darker"></div>
-    <div class="heading-primary">
-        <h1>
-            <span class="text-main">Вітаємо в Коломиї</span>
-            <span class="text-sub">Сплануй свій час в нашому місті</span>
-        </h1>
-    </div>
-
-
-</header>
-
 <main>
     <section class="section-organaizer">
         <div class="container">
@@ -34,11 +22,14 @@
                             <div class="panel-heading panel_header">
                                 <div class="panel_icon"><i class="fa fa-cutlery text-primary" aria-hidden="true"></i></div>
                                 <p class="panel_text">Де поїсти?</p>
-                                <a style="color: #fff;" class="toggleIcons text-w"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-right" style="display: none" aria-hidden="true"></i></a>
+                                <a style="color: #fff;" class="toggleIcons text-w">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <i class="fa fa-chevron-up" style="display: none" aria-hidden="true"></i>
+                                </a>
                             </div>
-                            <div class="panel-body" style="padding: 0;">
+                            <div class="panel-body" style="padding: 0; display: none;">
                                 <ul id="left-1" class="list-group" style="margin: 0">
-                                    <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <li data-parent="left-1" id="item-1" class="list-group-item group-item" price="2">
                                         <div class="list_items">
                                             <div class="list_img">
                                                 <img src="http://prybyralnyk.com.ua/_bd/0/36089203.jpg">
@@ -59,7 +50,7 @@
                                         </div>
 
                                     </li>
-                                    <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <li data-parent="left-1" id="item-2" class="list-group-item group-item" price="2">
                                         <div class="list_items">
                                             <div class="list_img">
                                                 <img src="">
@@ -81,7 +72,7 @@
 
 
                                     </li>
-                                    <li data-parent="left-1" class="list-group-item group-item" price="2">
+                                    <li data-parent="left-1" id="item-3" class="list-group-item group-item" price="2">
                                         <div class="list_items">
                                             <div class="list_img">
                                                 <img src="https://objor.com/uploads/posts/2018-2/6697-1-5a7867a05ba78.jpeg">
@@ -109,9 +100,12 @@
                             <div class="panel-heading panel_header">
                                 <div class="panel_icon"><i class="fa fa-bed text-info" aria-hidden="true"></i></div>
                                 <p class="panel_text">Де поспати?</p>
-                                <a class="toggleIcons"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-right" style="display: none" aria-hidden="true"></i></a>
+                                <a class="toggleIcons">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <i class="fa fa-chevron-up" style="display: none" aria-hidden="true"></i>
+                                </a>
                             </div>
-                            <div class="panel-body" style="padding: 0;">
+                            <div class="panel-body" style="padding: 0;display: none;">
                                 <ul id="left-2" class="list-group" style="margin: 0">
                                     <li data-parent="left-2" class="list-group-item group-item" price="2">
                                         <div class="list_items">
@@ -188,9 +182,12 @@
                             <div class="panel-heading panel_header">
                                 <div class="panel_icon"><i class="fa fa-futbol-o" aria-hidden="true"></i></div>
                                 <p class="panel_text">Де розважитись?</p>
-                                <a class="toggleIcons"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-right" style="display: none" aria-hidden="true"></i></a>
+                                <a class="toggleIcons">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    <i class="fa fa-chevron-up" style="display: none" aria-hidden="true"></i>
+                                </a>
                             </div>
-                            <div class="panel-body" style="padding: 0;">
+                            <div class="panel-body" style="padding: 0;display: none;">
                                 <ul id="left-3" class="list-group" style="margin: 0">
                                     <li data-parent="left-3" class="list-group-item group-item" price="2">
                                         <div class="list_items">
@@ -289,6 +286,7 @@
 
 
 <script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
