@@ -1,121 +1,100 @@
 <!DOCTYPE html>
-<html lang="ua" class="mdl-js"><style type="text/css" id="block-image-video"></style>
+<html lang="ua" class="mdl-js">
+<style type="text/css" id="block-image-video"></style>
 <head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Туристичний органайзер для гостей міста Коломиї">
-    <link rel="shortcut icon" href="">
-
-    <title>Вітаємо в Коломиї</title>
-
-    <!-- Bootstrap core -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-    <!-- Custom styles for this template -->
-    <link href="./css/header.css" rel="stylesheet">
-
-	
-	      <style>
-
-    </style>
-  <body data-spy="scroll" data-offset="0" data-target="#theMenu" style="" class="">
- 
-	<div id="headerwrap">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Туристичний органайзер для гостей міста Коломиї">
+	<link rel="shortcut icon" href="">
+	<title>Вітаємо в Коломиї</title>
+	<!-- Bootstrap core -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Custom styles for this template -->
+	<link href="./css/header.css" rel="stylesheet">
+	<style>
+	</style>
+<body data-spy="scroll" data-offset="0" data-target="#theMenu" style="" class="">
+<div id="headerwrap">
 	<div class="darkbg">
 		<div class="container">
 			<div class="row">
-									
 				<div class="col-md-10 col-md-offset-1">
 					<h1 class="title">Вітаємо в Коломиї</h1>
 					<h2>Сплануй свій час в нашому місті</h2>
 					<a href="#block"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-cutlery"></span><br> Їжа</button></a>
 					<a href="#block"><button type="button" class="btn btn-default btn-lg text-secondary"><span class="glyphicon glyphicon-film"></span><br> Розваги</button></a>
 					<a href="#block"><button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-bed"></span><br> Нічліг</button></a>
-					
 				</div>
-				</div>
-				
-				
-			</div><!-- --/row ---->
-		</div><!-- --/container ---->
-	</div><!-- --/headerwrap ---->
-
-
-	
-
-
+			</div>
+		</div>
+		<!-- --/row ---->
+	</div>
+	<!-- --/container ---->
+</div>
+<!-- --/headerwrap ---->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
+<script>
+    $(document).ready(function () {
+        $(".title").lettering();
+        $(".button").lettering();
+    });
 
-  
+    $(document).ready(function () {
+        animation();
+    }, 1000);
 
-    <script>
-      $(document).ready(function () {
-  $(".title").lettering();
-  $(".button").lettering();
-});
-
-$(document).ready(function () {
-  animation();
-}, 1000);
-
-function animation() {
-  var title1 = new TimelineMax();
-  title1.to(".button", 0, { visibility: 'hidden', opacity: 0 });
-  title1.staggerFromTo(".title span", 0.5,
-  { ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80 },
-  { ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0 }, 0.05);
-  title1.to(".button", 0.2, { visibility: 'visible', opacity: 1 });
-}
-    </script>
-<script>	
-
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 500, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
+    function animation() {
+        var title1 = new TimelineMax();
+        title1.to(".button", 0, { visibility: 'hidden', opacity: 0 });
+        title1.staggerFromTo(".title span", 0.5,
+            { ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80 },
+            { ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0 }, 0.05);
+        title1.to(".button", 0.2, { visibility: 'visible', opacity: 1 });
     }
-  });
 
-</script>	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-
-</body></html>
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 500, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script>
+<!-- Bootstrap core JavaScript
+   ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+</body>
+</html>

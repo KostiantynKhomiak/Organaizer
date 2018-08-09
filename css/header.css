@@ -6,22 +6,12 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-body {
-	scroll-behavior: smooth;
-}
+
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -63,11 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
-a {
-transition: all 0.9s linear;
-transform: translateY( -1000px );
-}
-
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -75,12 +60,13 @@ transform: translateY( -1000px );
 #headerwrap {
 	background: url(../img/header2.jpg) no-repeat center top;
 	margin-top: 0px;
-	padding-top:120px;
-	text-align:center;
+	padding-top: 120px;
+	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
 	width: 100%;
+	min-height: 100vh;
+
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -96,7 +82,7 @@ transform: translateY( -1000px );
 .darkbg {
 	margin-top: -120px;
 	padding-top: 120px;
-	height: 700px;
+	min-height: 100vh;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.2); /*255, 0, 0 */
 	
